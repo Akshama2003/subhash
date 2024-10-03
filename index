@@ -1,0 +1,928 @@
+<html>
+
+<head>
+    <title>
+        Smile Su-Jok Department
+    </title>
+    <link href="g1.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet" />
+    
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            SSD
+        </div>
+        <div class="nav-links">
+            <a class= "aa"  href="#second_section">
+                About Us
+            </a>
+            <a class= "aa" href="#third_section">
+                Our Events
+            </a>
+            <a class= "aa" href="noni2.html">
+                Know &amp; Learn Sujok
+            </a>
+            <a class= "aa" href="#fourth_section">
+                Our Services
+            </a>
+        </div>
+        <div class="nav-buttons">
+            <a class="get-involved" href="learnsujok.html">
+                Donation Site
+            </a>
+            <a class="donate-now" href="another.html">
+                Donate Now 
+            </a>
+        </div>
+    </div>
+    <div class="hero">
+        <div class="slides">
+            <div class="slide active" style="background-image: url('smile4 - Copy.png');"></div>
+            <div class="slide"
+                style="background-image: url('ClipDown.App_350448264_801080438059253_6031259885238081989_n.png');">
+            </div>
+            <div class="slide"
+                style="background-image: url('ClipDown.App_341342898_3404116149804951_4657754362655357710_n.png');">
+            </div>
+        </div>
+        <div class="hero-text">
+            <h1>
+                Welcome to Smile Su-Jok Department
+            </h1>
+            <p>
+                Providing affordable healthcare and education to the community since 2015. Join us in our mission to
+                support the poorer among poor with quality medical services.
+            </p>
+            <div class="hero-buttons">
+                <a class="learn" href="#">
+                    Learn More
+                </a>
+                <a  class="our" href="#">
+                    Our Services
+                </a>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const slides = document.querySelectorAll('.slide');
+            const heroText = document.querySelector('.hero-text');
+            let currentSlide = 0;
+
+            function showSlide(index) {
+                slides.forEach((slide, i) => {
+                    slide.classList.remove('active');
+                    if (i === index) {
+                        slide.classList.add('active');
+                    }
+                });
+            }
+
+            function nextSlide() {
+                currentSlide = (currentSlide + 1) % slides.length;
+                showSlide(currentSlide);
+            }
+            
+
+            setInterval(nextSlide, 3000);
+
+            // Initial animations
+            setTimeout(() => {
+                slides[0].style.opacity = 1;
+                heroText.style.opacity = 1;
+                heroText.style.transform = 'translate(-50%, -50%)';
+                const line = document.querySelector('.hero-text h1::after');
+                if (line) {
+                    line.style.opacity = 1;
+                }
+            }, 500);
+        });
+    </script>
+</body>
+
+</html>
+<!-- Initial navigation bar -->
+
+
+<!-- Secondary navigation bar that appears on scroll -->
+<nav class="nav-scroll">
+    <!-- Your navigation links here -->
+    <ul>
+        <li><a class= "aa" href="#second_section">About Us</a></li>
+        <li><a class= "aa" href="#third_section">Our Events</a></li>
+        <li><a  class= "aa" href="noni2.html">Know & Learn Sujok</a></li>
+        <li><a class= "aa" href="#fourth_section">Our Services</a></li>
+        <li><a class= "aa" href="#ninth_section">FAQ's</a></li>
+        <li><a class= "aa" href="#fifth_section">Contact Us</a></li>
+    </ul>
+</nav>
+
+
+<script>
+    // Get the navigation bars
+    const navInitial = document.querySelector('.nav-initial');
+    const navScroll = document.querySelector('.nav-scroll');
+
+    // Add event listener to the window scroll event
+    window.addEventListener('scroll', () => {
+        // Check if the user has scrolled down the page
+        if (window.scrollY > 200) { // Adjust the value as needed
+            // Show the secondary navigation bar
+            navScroll.classList.add('show-nav-scroll');
+            // Hide the initial navigation bar
+            navInitial.classList.add('hide-nav-initial');
+        } else {
+            // Hide the secondary navigation bar
+            navScroll.classList.remove('show-nav-scroll');
+            // Show the initial navigation bar
+            navInitial.classList.remove('hide-nav-initial');
+        }
+    });
+</script>
+<!-- second section-->
+<html>
+
+</html>
+<div class="" id="second_section"></div>
+
+<head>
+    <title>
+        About Smile Su-Jok Foundation
+    </title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet" />
+   
+   
+    <div class="content po">
+        <h1>
+            About Smile Su-Jok Foundation
+        </h1>
+        <style>
+            .content{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .content p {
+                max-width: 70vw;
+                text-align: center;
+            }
+        </style>
+        <p>
+            At Smile Su-Jok Foundation, we are dedicated to promoting natural health through Sujok therapy. Our mission,
+            ‘Smiles for All’, reflects our commitment to making holistic healing accessible to everyone, especially
+            those in need.
+        </p>
+
+        </html>
+        <html>
+      
+           
+        <div class="stats">
+            <div class="stat-group">
+                <div class="stat">
+                    <h2 id="centers">
+                        0
+                    </h2>
+                    <p>
+                        OUR TEAM
+                    </p>
+                </div>
+                <div class="stat">
+                    <h2 id="patients">
+                        0
+                    </h2>
+                    <p>
+                        PATIENTS
+                    </p>
+                </div>
+            
+
+            <div class="stat">
+                <h2 id="events">
+                    0
+                </h2>
+                <p>
+                    OUR EVENTS
+                </p>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    </div>
+    <script>
+        function animateValue(id, start, end, duration) {
+            const obj = document.getElementById(id);
+            const range = end - start;
+            let startTime = null;
+
+            function step(timestamp) {
+                if (!startTime) startTime = timestamp;
+                const progress = Math.min((timestamp - startTime) / duration, 1);
+                obj.innerText = Math.floor(progress * range + start);
+                if (progress < 1) {
+                    window.requestAnimationFrame(step);
+                }
+            }
+
+            window.requestAnimationFrame(step);
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            animateValue("centers", 0, 1000, 2000);
+            animateValue("patients", 0, 20000, 2000);
+            animateValue("years", 0, 15, 2000);
+            animateValue("events", 0, 5, 2000);
+        });
+    </script>
+    </body>
+
+    </html>
+
+    <!-- index.html -->
+
+
+    <!-- third section-->
+
+    <html>
+
+    </html>
+    <div class="" id="third_section"></div>
+
+    <head>
+        <title>
+            Upcoming Events
+        </title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+     </head>
+
+<body>
+    <div class="container1">
+        <div class="header">
+            <h1>
+                Upcoming Events
+            </h1>
+        </div>
+        <div class="container99">
+            <div class="description">
+                
+                <p>
+                    Join us in our various events throughout the year to promote Sujok therapy and community health
+                    awareness. From training camps to international conferences, we have something for everyone
+                    interested in Sujok therapy.
+                </p>
+            </div>
+        </div>
+
+        <div class="events">
+            <div class="event">
+                <img alt="A grand event with people gathered together under colorful decorations" height="400"
+                    src="smile3.png" width="600" />
+                <h3>
+                    Annual Day Function
+                </h3>
+                <p>
+                    A grand event bringing together therapists and professionals from all over India.
+                </p>
+                <button>
+                    Learn More
+                </button>
+            </div>
+            <div class="event">
+                <img alt="People sitting in a room participating in a training session" height="400" src="smile2.png"
+                    width="600" />
+                <h3>
+                    Training Camps
+                </h3>
+                <p>
+                    Comprehensive learning experiences for therapists to enhance their Sujok therapy skills.
+                </p>
+                <button>
+                    Learn More
+                </button>
+            </div>
+            <div class="event">
+                <img alt="People participating in a blood donation drive" height="400"
+                    src="ClipDown.App_375327871_17969308328555745_3414168976247017916_n.png" width="600" />
+                <h3>
+                    Blood Donation Drives
+                </h3>
+                <p>
+                    Community service initiatives to promote health and save lives through blood donation.
+                </p>
+                <button>
+                    Learn More
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<!-- 4ths -->
+<div class="" id="fourth_section">
+   
+    <div class="therapy-section">
+        <div class="container2">
+            <div class="header">
+                <h1>Our Comprehensive Sujok Therapy Services</h1>
+                <p>
+                    At Smile Sujok Foundation, we offer a range of Sujok therapy services designed to address various
+                    health conditions. Our natural and holistic approach ensures that each patient receives personalized
+                    care without the need for medication. Our experienced practitioners are dedicated to promoting
+                    healing and well-being through advanced Sujok techniques.
+                </p>
+            </div>
+        </div>
+
+        <div class="services">
+            <div class="service">
+                <img alt="Sujok Therapy for Joint Pain" height="500"
+                    src="https://th.bing.com/th/id/OIP.QtyYS3AEymX1YuQF0UPMmwHaE8?w=291&h=194&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                    width="400" />
+                <h3>Sujok Therapy for Fever</h3>
+                <p>
+                    Our Sujok therapy effectively alleviates Fever by targeting specific acupressure points on the hands
+                    and feet, promoting natural healing.
+                </p>
+                <button>Learn More</button>
+            </div>
+            <div class="service">
+                <img alt="Sujok Therapy for Back Pain" height="500"
+                    src="data:image/jpeg;base64,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"
+                    width="400" />
+                <h3>Sujok Therapy for Back Pain</h3>
+                <p>
+                    Experience relief from back pain with our specialized Sujok therapy, which stimulates the body's
+                    healing processes without medication.
+                </p>
+                <button>Learn More</button>
+            </div>
+            <div class="service">
+                <img alt="Sujok Therapy for Knee Pain" height="500"
+                    src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxIREhUSExMVFRUXFRUVFxUVFRUVFxUYFxcWFhcVFxUYHSggGBolGxcYIjEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGRAQGi0lHR0tLSstLS0tLS0tLS0tLS0tLS0tLSstLS0tLS0tLS0rLS0tLS0tLS0tLS0tLS0tLSstLf/AABEIAKgBKwMBIgACEQEDEQH/xAAcAAACAwEBAQEAAAAAAAAAAAABBQIEBgAHAwj/xABBEAABAgMDCgQDBQcDBQAAAAABAAIDBBEFIVEGEjFBYXGBkbHBEyKh8DLR4QcjQlJiM3KCkqKy8RRjcyQ0g6PC/8QAGgEAAgMBAQAAAAAAAAAAAAAAAQQAAgMFBv/EACYRAAICAQQCAwEAAwEAAAAAAAABAhEDBBIhMSIyE0FxUWGBsUL/2gAMAwEAAhEDEQA/APXwsVlrCzY4d+ZjTyq3sFtQkuVsh4sHPHxQ6ne0/FyuPAqZo3FltPPbkVmHa68FaOSjgtB5rMG65W5GYLblz+jryVo0RGsLVWfNiKwO/ELnDA40wKxkKPXWrkGYoag0OIuWuOe1iubFuRpLYg58CK3FjvQVXhsW4kYFewy1sO0PGcDcSKA/IryW3Zd0KO5rgQHElp1EYgq2ZqStFtGnCTTKp0A7wevcr7S95Ldeke+arQTVh2Ud2PUL6yrqFrsDmk7DoKRkd/GuBmy9tOHdvqHDim0jEzmg405ivvilJ0kDeOejg4dUws06cKteONxHNU+zSriPxDqOPWilCgXcAvtLtuHDorcKHdw7LZRsQlkoyFrQvPvAPOiV2hD0j3cCFpLYhDOB2U5VCRTQzgTj3IWXTHIvdFGLtVma8H38P1XomREcuDBixvQHusNbcP8AtceVB2Wt+zl//UQ2fuj+kHsmI80J6mO1P8PZQKXIhBELonmjxDKSFSLF/wCR/UpCCtblzDzYsQfrd1KykJmvl80hNcnaxS8bIRTfTDr76K3Jwar5wJYpzIy6hO3Y5sWBoTm035kF20BvO4+lVVsqHRQyjjeVjcSXchTuqsH2LICbyjUrlQnMm1ULyGMBqZ2c2rxsBPbul8EJrZLfiO4dz2W+FXJCmd1Bl0oKRUV0TlsiUFIqKIAFAooIkIlcigoA+gR2IBEIEMFlHZBgPqPgde04fpO0JJWi9SnZRsZhY7QdeB1FebT0q6E9zHC8GiRz49rtHV0ubeqfaOgTRCaQJwFIqKTXkJdDLRqYMYKc9IQ5iGWRACDoxadRB1FZ6BNplLWjTarqRm4PtGGmbPfLRzBiXgmjXanMdUB3Miu5V4RpVpwoeF9eq9Etez4c5DzCc14vY6l7T3Bu9MFgbUgPgxi14oaiuF+h20Z1ab1nkj9nU0mbf4vssQotWhx0jTtHwv7HiU5sw+V2ynJzm96pHL3Xaj/g+lDvKcWMDRw2Zp6g8x6hYVyPS9TXSIqOXRMmsuO5VLKh3V3d0yzfKdwT8YeJ57Ll82jM23DuJwzj6JAGXCuA6E/Jam2Ifkibh1SONBpUYAjmQ0dCkpryOxgleOjIWxC8wH6TX+IkK/kHGLbQgjFwH9w6EKU7Az4hwAHr7KoZOxcy05cf7sP1dm9lriKateP+mfoFVbTtKFLsz4jqDUPxOODRrKr29bMOUh5773G5jK0Lz8hrP0XmU7OxZh/ixXVJ0XPAaPytFwAT08m39PN4sLny+iVvTImIjombQEkhpIOvXRL2SwKttYrECEEo3Z0UqVFWHIK/LS1FZhwlYhw1Vssj6w/KFn7QmvEi7G+Udzz6K5b0/wCGMxp8xF/6R8yksoFUtFfY4k2p3KNSmSancs1BAkXGJ3IMpDG2p5/RJGNrditEG0AGAA5JvTLlsQ1UuEgFRUiop0QAVEqRUUQAKCKCJAIIlBQBMKQUQpBAgQkeU9k+K3xGjzAX7QngUgqyipKmaQm4u0eUxG0uUVpMr7KzHeKweV2kYH33WXDlzpw2ujr45qcbRaEtnAloqQK00V2A4pRL2oCfKa0NL7iDrBGoprIxiDr4XrK5WyRhRfGh+TPvJZ8JOurceSCVl7ZsbPtIDQabNSYWrZ8Keh5rjmvHwvF5bsI1jYvL7OykAieFFGa6jSDoBDgHNOyoIPFbCStAi8FFprhhi+d0Xyiu+yo0DyxG3gVD23tcW4HUSKmhvrRX7NGk6iWU9TXl0TKVtkaHX11aVaEgwgeG0Noa5o0cMD6Km1WOrVNqpof2Y3ycugVtwuO5fGQb92NoHYKxDvu93hdFR4PPTyeQrm4dSBi7pRZ+ML6Yur/LeP6lpn0OjSAeZSaPAIeSWnQOVSbua5+WHPB29Pnio8iGHLVc84kgcKNH955LNydnRTNsmWt8jHh9TdnBr3OaBvBF620VgaDTUK9T6+ZUJ2dDRQqRVIOXO5vgNozr5iIYsWmcRQDU0DU0aR9VWe6mzdoS6JafDdd6qpHnK6yrN2LKKQ1Ezfcm8lDrRZ6y4ecb1tbMgUCFAboDYNF0Z4Y0uJoGgk7grkQBYvKu1gSYDDgXndeG9zwVJEjyKZiZMV5cdJNd2zsmUixKZZqfSDNCDNx1ItTaCEvk2pjDQMpF+zmZ0Ruy/l9U9KV2Ky9zsBTn/hMyuhp1UTl6l3P8IlRUiopgWAVFSKiiACCJQKJAFBEoKAJhSCiFIIECFIKKIQCj4z0o2Mww3VodY0gi8ELzK1pN0GI5puoae9h08V6qs5lnZfiM8VovaKOprbjw6HYsM0NyGtNk2yp9MwUJ19R1IPorNqS/jwHMurS6p16lVdVqtysYpPo6nZ5Dbsy8x2eI0BzIcOESPxCGMxrjic0NbuaFurHFZcRBeALxu1j0SHLazwYtQKE1I5V7J9kHWJBLMSW/zAjrRM44rI0mLzl8SbX6MpeICQQdFLloZG0A2hJ10A1uOu7AfJfOwrGaW5sRrXEXVpowofTkn0jZEKG4lrGiuul/MrNYHKVG2TURjBscShPhgm4kE0wvuUYcQg8jyvVgi4tGqg5BCHA0aPXaugqSo4krbsyzLaMrFdCi3Ue4MeR5XsJJArqIrRWp21g+hzm0A1EGtafL1TiclWP8r2g1F4cAdh0pRGyOljfmFus5j3tA4A0SWXHKL46Z1MGXHNXLtGata0GQ61eA0gda05XcVj5m3RFe1rQc1z2troHmcG1v06VucoskYeY57W3arySBS4EnWvNf9NmPgt/32j/2MWMI2+RtyXFHrNs/ZrDbBe6BEjPitFQ15YQ+mlozWg1pov0rz+BDANCKEL9CFeW5eyUNs55KVe0Pe0fhcaiuyoANNtda3yQSVoS0+Zye2Qqsll610roSOzpelE7B0JZsZkinlDaQgQXP1/C0YuOjgNPBecQqk1JJJvJ1k6SSmGV9rmNGMMHyQzTe8XE8LxzxS6VCobQjSG0oxP5KGlUjDTuWFFQsxlL3K/CKWQnK/LqIxkjS2TDpDriSeytFdCh5rQ3AALiurBUkjjTlcmyJUVIqK1MwFRUioqAAUEUESAKCK5QBIKQUQiECEgiEAiEAkgigEQgWPPsqrG8CJVv7N9SNh1t+SRwbivScqJbxJZ91S2jxw0/0krzeMKGqSywpnU02TdHn6KGUMmHtDqXtIPzVb7Kon/cDWGg/1t+qePALeCX5BS4hzky3U6F654VtPKpoOqjeNs9DlmtF491VxlHOGGk8O6X5uaBQqzZralxvpSnU9k98dNyOT8txURpCoR73919aiipQSRd6qMR5FUtJtDEUmfaNeQMCeFb/AJL6Q3ml46IMg+U1PmI5XU5rojc1vBbJ3HkwdqXBQn4xoaN2bOOxeUZSyGbMQC0UBjsdTD7xpPRenxnm9Y7KfNrCcSLorL7qDzs11oh8cXbo3x5pxdWerTk02HDfEd8LGuedzQT2XkMJzoz3RXGr3uLidp1btXBOrYytdPOfBl7pYVa6Jrj6iBhD9TuuUJSUDQlMs7dId02N443LtkoRzDiAK8dClblqiDCc/RRhzRi8ijBzpwVKdjZoLnENY28uxwAxWGtm1Xx3X3NB8rcNpxKXY0kmUYZqU1kmpRB0p7Z7dCqzVD2Qam8IKhINCdMhVCoBnyYU4sZudEaP1D0vSt0OhTvJ1v3jePQq2LmaMczqDZpnKBU3L5ldZHEYCoqRUVcqAqJUioqAAgigiQBXLigoAmEQgEQgQkEQgEQgEkEQgEQgWJUrcV5Zb8kYUSJD/Kat2t0g8l6mFkcu5KphxQLqFh36W/8A1yWOVWhnTTqdf0xcpFzgvnKxPBiPiaLmgnZX6hV2PzImbqOjerU/DrBi00ltB6JfFxKzo5lcGv6eitls5gdXV9PkvrCoxppt6LOWFbmfBYHA18MaMaaKY1qmcCeaWEgP4tpqXT5dHCaSv/B92zBBrqX1dOAVN5I+iTTdpUHlY7VeQUuizjznVrq7K/w7uSiy1wbCTm867aPW9XHGoppWNsafe14GkHN07j81pJOdB10OBuWWaPxmmJ/IxfaMLMBLjw1LDZTQ/Egsh6M51TsBP0Wmy+ttkFg/E46G6q4k4bFnZZjnw4Tn3uc3OJO8pWM7bb/jOhHFSjx9r/pcsiSDGhoFAAABgAm4p8PNUxG8Nm+7jgpzEcQYJe430r9BvSo9LkzuW86PLAbq87ujR1PJYqKmM9FL3ue68uJJ+W4aOCovaqlkjpfStFZ7Lkil23rS2cblnI2iNZY0TmUjYpMx6tQHKpGrHJFSnVgN8/ApFLLQ2APM44N7haYF5oU1LrGx0VAqRUSuqjjMiUESgrAAVFSKiVAAQRQRIArlxQUISCkFEKQQAEKSiFIIBJBEKIUggWJBLMpZfPln4tAeP4bz6VTMLnNqCDoIpzVWrRaLppnhtvmjai4i8cNCZyjvFlg8fjoedPmqdty5oQdIJaRgRdROrChBki3HNFB/5KdglsULbOrnntijRZLwwIdGgChuoKXak9I08ElyevGcKUI0DQCDQgbjUcFddFOfm4tPMXjom4/SOVk5k2F42oulGO0tHLaq9CSN5Vkkge9q1MaPpKSDGmoAF2A2cVZZCboqVQdHLWk4kAc69Apf6u4FZydumaRVLcillHKh5a2v8wBG/QUqm5VocAAAGtAA0D6JpFmPEdXh269FmMpZ+/wm/E8AXam/i5i7ilpx2pj+DyaRXgOMeNd+zb8O3F3y2JhlxZhhS0J5uLnGowuGaN9K805yNsseV1Lm3nfqHvBXPtIl8+Tcfyua7t3WUYeLZtlzVkUEeKxlXcrUZfAhYjKBBN6dyURJArkvFVGaxZpoD/fv3cr8A3pFKR03loiows0EotLYLfjP7o6rLyTlrbDZ92Ti7oAExpl5iOrfgXyolSKgV0UclgKCJQVgESgVIqJUABBFBEgCgigoQkEQgEQgAkEQgEUAkgpBRCIQLEgpBRCkgE82y+lg2LENPiAd6UJ5gr4QLpTN/S0f1Ard5R2XCjQnmI2pbDdQ1IpcSNBvvWNbBJYGtwF25yzitrkxqWRThCP8HFjs8KE1o/DWu9xc4jmVaiuq5rxqdf3Hoqwdm36nCvHWoy8apIxoeIr2KMH4/hnkVz/Rq0DRt+SsBoVXO98F9YLquWwufWYlxQDiqMyQ0Zvv38kye68nBLjCznVOKWnLysZxx8aZSZD8NrnnULt/u/kscJd0SYc+lbw0UvJJwHFbHKCLRuaMRdx7kAbl2R9kva4uiNLc01ocTo9L+Stl5il/TTTyUHKX8NFYkl4MINPxG92wnVwCGUMr4stFZix1N4FR6hMFxFUdqqjBzbluZ+cphlCqxCe5SSXgx4kP8r3Abq3eiSuakWdiLtWfKi+sEqGauaFRl0x3I3rQyMJZuy9K18g1UZZsYSbFsrKbSC3ieZKy8uxa2VFIbB+lvRM6Vcs5+slwiRUSpFRKfRzWAoLigrAAUCiUFAAXLkESAKCJQUISRCipBABIIqIUggEkEQohSCDLEgpBRCKASta37CL/AMbuhWWs2WJA3LSW9GDIDybq0bzIHSqUWW8BtMLljN80b4142fKdh5op7B1FKGPIccR2I+ScWoyrSUlefhdiKHePpRYuTQzGKa5NDnVAOIqmEky+qTS8SrBsryTmRdcdy3WS0LSx0dMPuA3nsF8mGjXFRmXXjcvm4ktpianYB/hUjzIu+Ilb/R+LEYDozwTw+gWrCT2KM5zn6mjNHHT09U4Wqd8mElXByIQRCJU8r+0+RzZgRB+NgPEeU9AsG9q9R+1Ag+GNYaTzP0XmUQJPJ7M6uB3BHya1SENcxWWMWTGEX7HbeFs5NmhZSyId62coLlT7JN8FyG1aiXPkZ+63os00LRyZ+6Z+6Oia0/bOfqukTKiVIqJTqEGRKBRKBVgAKBRKBUABBFBEgFy5BQgQpBRRCACQUgohSCAQhSUQigyxIKQUQpBAJmMvZrNhMhj8Ts48Lh19EusyZN20A8Tp9VWy5mM6Pm6mgDueqFkP8rP4h617pKcryM6MIViQ2mYlSG4kBJoMXPZE2PY4br205UV+cfQ1wa48gSlVjaXtOuGfQg9iqyfJaC4G0m6gHLontnOuO9Z+Bo4p3Zp8vvBWg+SmRcAmneai+U4+4NGi+u33epuviBfKb+Pdd8/WqjdJkiraHNgtpD3uPYJiqNjfs/4j2V5MQ9UKZPZnIoLlczPLvtKmqzBb+VrR6V7rCvKfZYTXiTER2LzTdWgSApKbts62JVFI5gV2XCpw0wlws2bIb2cxaqS0LMyAWmktCquyT6L7U/s8/dM3dykAT2zD903j1KZwewhqfUsFRKJUSnUIMCCKCsABQKJQKgAIIoIkAUESuUIciEFyACQUguXIBJIhcuQCSCkFy5Bljym3Y/iTER2L3cqmit2S+4fvn1A+S5cub/6Ou/RFy0XeVx/TTmQl1lHzn9x/9pXLkZdorH1Y4gG5OJB1GrlytDspPo6UveT793L4VqScSuXKS6BHtjyxT5CP1dgmC5cmsfqhPL7s5fGdjZkN7vytceQQXKz6KLtHg9qvq871RK5ckWddE4SYQFy5BmiHtmrSSmhcuVCsy4E8sk/dDe7qUVyZwewnqfQslBcuTqOeyJQRXKwCJQK5coACCC5EhyC5coQ//9k="
+                    width="400" />
+                <h3>Sujok Therapy for Knee Pain</h3>
+                <p>
+                    Our customized Sujok therapy plans address knee pain by using targeted acupressure techniques to
+                    enhance recovery and well-being.
+                </p>
+                <button>Learn More</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<html>
+    <style>
+
+    .container98 {
+        width: 99%;
+        height: 585px;
+        margin-top: 20;
+        padding: 20px;
+        background-color: #ffffff;
+    }
+
+    .flip-card-container {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+    }
+
+    .section-subtitle22 h1 {
+        text-align: center;
+        color: #ffffff;
+        font-family: Arial, sans-serif;
+    }
+
+    .flip-card1, .flip-card2 {
+        margin-top: 20px;
+        background-color: transparent;
+        width: 300px;
+        height: 418px; /* Adjusted height to 418px */
+       
+        perspective: 1000px;
+        display: inline-block;
+        transition: box-shadow 0.3s ease-in-out;
+    }
+
+    /* Add glowing rainbow effect on hover */
+    .flip-card1:hover, .flip-card2:hover {
+        box-shadow: 
+            0 0 20px #08f804,  /* Red */
+            0 0 40px #1df3ba,  /* Orange */
+            0 0 60px #89e8c5,  /* Yellow */
+            0 0 80px #7fe87d,  /* Green */
+            0 0 100px #1db564, /* Blue */
+            0 0 120px #04fa29, /* Indigo */
+            0 0 140px #3f8003, /* Violet */
+            0 0 160px #0b522d, /* Deep Pink */
+            0 0 180px #45eddc; /* Hot Red */
+    }        
+
+    /* This container is needed to position the front and back side */
+    .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 418px;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+        font-family: Gabriela Stencil;
+    }
+
+    /* Do a horizontal flip when you move the mouse over the flip box container */
+    .flip-card1:hover .flip-card-inner, 
+    .flip-card2:hover .flip-card-inner {
+        transform: rotateY(180deg);
+    }
+
+    /* Position the front and back sides */
+    .flip-card-front, .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 418px;
+        -webkit-backface-visibility: hidden; /* Safari */
+        backface-visibility: hidden;
+    }
+
+    /* Style the front side (fallback if image is missing) */
+    .flip-card-front {
+        background-color: #bbb;
+        color: rgb(255, 255, 255);
+    }
+
+    /* Style the back side */
+    .flip-card-back {
+        background-color: rgb(255, 253, 253);
+        color: rgb(0, 0, 0);
+        transform: rotateY(180deg);
+    }
+</style>
+
+    
+ <section class="section blog">
+        <div class="container98">
+
+          <h1 class="section-subtitle22"><style> .element h1{ color: #ffffff;}</style> Our Team
+          </h1>
+          <div class="flip-card-container">
+            <div class="box">
+                <div class="flip-card1">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+
+                <a  href="#">
+                    <img src="WhatsApp Image 2024-08-24 at 17.23.23_55fdd27c.jpg" width="" height="418" loading="lazy"
+                      class="img-cover">
+                  </a>
+              </div>
+                 
+                <div class="flip-card-back">
+                      <div>
+                        <a  ><h1> Dr. Subhash Chaudhary </h1></a>
+
+                        <p class="author-title"><h3>President of foundation</h3></p>
+                      
+                  <h2 class="card-title">
+                    <a >
+                      Dr Subhash Chaudhary is working in this field since last 12 years. 
+                    </a>
+                  </h2>
+
+                  <a href="#" class="btn-link">
+                    
+
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+                      </div>
+                    </div>
+                </div>
+            </div>
+          
+            <div class="flip-card2">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+
+
+                  <a href="#">
+                    <img src="WhatsApp Image 2024-08-24 at 17.21.48_74a45fa5.jpg" width="" height="418" loading="lazy"
+                       class="img-cover">
+                  </a>
+
+                </div>
+                    
+                </figure>
+
+                <div class="flip-card-back">
+                    <div class="author-wrapper">
+                      <figure class="author-avatar">
+                       
+                      </figure>
+
+                      <div>
+                        <a  class="author-name"><h1>Dr. Gurmeet Chauhan </h1></a>
+
+                        <p class="author-title"></p>
+
+                  <h2 class="card-title">
+                    <a >
+                        Dr. Gurmeet is the trainer and a professional doctor for our foundation.
+                    </a>
+                  </h2>
+                      
+                  <a href="#" class="btn-link">
+                    
+
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+                      </div>
+                      </div>
+                </div>
+                    </div>
+           
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+    </article>
+  </main>
+
+</html>
+
+<!--5ths -->
+<html>
+
+<head>
+    <title>
+        Transformative Healing
+    </title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    
+</head>
+
+<body>
+    <div class="" id="ninth_section"></div>
+    <div class="container3">
+
+        <h1>
+            Transformative Healing
+        </h1>
+    </div>
+    <p class="subtitle">
+        Discover how Su-Jok therapy has changed lives. Our patients share their inspiring journeys of recovery and hope.
+    </p>
+    </div>
+    <div class="testimonial">
+        <div class="testimonial-card">
+            <div class="stars">
+                <i class="fas fa-star">
+                </i>
+                <i class="fas fa-star">
+                </i>
+                <i class="fas fa-star">
+                </i>
+                <i class="fas fa-star">
+                </i>
+                <i class="fas fa-star">
+                </i>
+            </div>
+            <p>
+                After suffering from severe neuropathy, I found hope and healing at the Su-Jok clinic. Dr. Subhash
+                Chaudhary's expertise and care have transformed my life, allowing me to return to my veterinary practice
+                and enjoy daily activities.
+            </p>
+            <div class="author">
+                <img alt="Photo of Dr. M.C. Khanduri" height="50"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFbWdqa3-MYrPf7XxKssnJiGvSAUjKBhm5BA&s"
+                    width="50" />
+                <div>
+                    <div class="name">
+                        Dr. M.C. Khanduri
+                    </div>
+                    <div class="role">
+                        Veterinarian
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="testimonial-card">
+            <div class="stars">
+                <i class="fas fa-star">
+                </i>
+                <i class="fas fa-star">
+                </i>
+                <i class="fas fa-star">
+                </i>
+                <i class="fas fa-star">
+                </i>
+                <i class="fas fa-star">
+                </i>
+            </div>
+            <p>
+                I was struggling with chronic pain for years until I discovered Su-Jok therapy. The compassionate
+                approach of the practitioners has given me a new lease on life. I am now able to engage with my family
+                and community again.
+            </p>
+            <div class="author">
+                <img alt="Photo of Anita Sharma" height="50"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUmVtMKGedVvSsh6EZv2mL-HDTQB6EZ-bP3g&s"
+                    width="50" />
+                <div>
+                    <div class="name">
+                        Anita Sharma
+                    </div>
+                    <div class="role">
+                        Retired Teacher
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="testimonial-card">
+            <div class="stars">
+                <i class="fas fa-star">
+                </i>
+                <i class="fas fa-star">
+                </i>
+                <i class="fas fa-star">
+                </i>
+                <i class="fas fa-star">
+                </i>
+                <i class="fas fa-star">
+                </i>
+            </div>
+            <p>
+                The treatment I received at the Smile Su-Jok Department was life-changing. I had lost hope due to my
+                condition, but the dedicated team helped me regain my strength and confidence.
+            </p>
+            <div class="author">
+                <img alt="Photo of Rajesh Gupta" height="50"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCiLg3W6hBtYK-1b9i16asYQftxYwvowq5rg&s"
+                    width="50" />
+                <div>
+                    <div class="name">
+                        Rajesh Gupta
+                    </div>
+                    <div class="role">
+                        Businessman
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="testimonial-card">
+            <div class="stars">
+                <i class="fas fa-star">
+                </i>
+                <i class="fas fa-star">
+                </i>
+                <i class="fas fa-star">
+                </i>
+                <i class="fas fa-star">
+                </i>
+                <i class="fas fa-star">
+                </i>
+            </div>
+            <p>
+                I was bedridden for months due to my illness. Thanks to the Su-Jok therapy, I can now manage my
+                household and enjoy life with my grandchildren. I am forever grateful to Dr. Chaudhary.
+            </p>
+            <div class="author">
+                <img alt="Photo of Sita Devi"
+                    src="data:image/jpeg;base64,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" />
+                <div>
+                    <div class="name">
+                        Sita Devi
+                    </div>
+                    <div class="role">
+                        Housewife
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="testimonial-card">
+            <div class="stars">
+                <i class="fas fa-star">
+                </i>
+                <i class="fas fa-star">
+                </i>
+                <i class="fas fa-star">
+                </i>
+                <i class="fas fa-star">
+                </i>
+                <i class="fas fa-star">
+                </i>
+            </div>
+            <p>
+                I came to the Su-Jok clinic with severe anxiety and physical ailments. The holistic approach of the
+                therapy has not only healed my body but also my mind. I feel rejuvenated and ready to take on new
+                challenges.
+            </p>
+            <div class="author">
+                <img alt="Photo of Vikram Singh"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAW4V4oMaBgoE466BDIDEt502ZXBMClzygUA&s/50*50" />
+                <div>
+                    <div class="name">
+                        Vikram Singh
+                    </div>
+                    <div class="role">
+                        Software Engineer
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="testimonial-card">
+            <div class="stars">
+                <i class="fas fa-star">
+                </i>
+                <i class="fas fa-star">
+                </i>
+                <i class="fas fa-star">
+                </i>
+                <i class="fas fa-star">
+                </i>
+                <i class="fas fa-star">
+                </i>
+            </div>
+            <p>
+                As a young person facing health issues, I felt hopeless. The support and treatment I received at the
+                Smile Su-Jok Department have empowered me to pursue my dreams and live a fulfilling life.
+            </p>
+            <div class="author">
+                <img alt="Photo of Neha Patel" height="50"
+                    src="data:image/jpeg;base64,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"
+                    width="50" />
+                <div>
+                    <div class="name">
+                        Neha Patel
+                    </div>
+                    <div class="role">
+                        Student
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
+
+<!--6ths -->
+<html>
+
+</html>
+
+<head>
+    <title>Frequently Asked Questions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+</head>
+
+<body>
+    <div class="faq-section">
+        <h1>Frequently Asked Questions</h1>
+        <p>Discover the healing power of Sujok therapy. This section addresses common inquiries about our services and
+            the benefits of our holistic approach.</p>
+
+        <div class="faq-item">
+            <h2 class="active">What is Sujok?</h2>
+            <i class="fas fa-chevron-up active"></i>
+            <p class="active">Sujok therapy is a natural healing method that involves massaging the hands and feet to treat a variety of conditions.</p>
+        </div>
+
+        <div class="faq-item">
+            <h2 class="active">What health conditions can it treat?</h2>
+            <i class="fas fa-chevron-up active"></i>
+            <p class="active">Sujok treat several conditions like bronchitis, asthma, headaches, dizziness, migraines, gastritis, ulcers, diabetes, and also mental disorders like depression etc.</p>
+        </div>
+
+        <div class="faq-item">
+            <h2 class="active">How does it differ from conventional treatments?</h2>
+            <i class="fas fa-chevron-up active"></i>
+            <p class="active">
+                Su Jok therapy can be an alternative to reduce pain which is easy, inexpensive and provides quick results.</p>
+        </div>
+
+        <div class="faq-item">
+            <h2 class="active">How many centers are there?</h2>
+            <i class="fas fa-chevron-up active"></i>
+            <p class="active">We have 27 healthcare centers across India dedicated to serving our community.</p>
+        </div>
+
+        <div class="faq-item">
+            <h2 class="active">Do you offer home services?</h2>
+            <i class="fas fa-chevron-up active"></i>
+            <p class="active">Yes we offer home services.</p>
+        </div>
+
+        <div class="faq-item">
+            <h2 class="active">Can I receive services from abroad?</h2>
+            <i class="fas fa-chevron-up active"></i>
+            <p class="active">Yes We have Professionals Outside also who work all for there patients</p>
+        </div>
+
+        <div class="faq-item">
+            <h2 class="active">How do I contact you?</h2>
+            <i class="fas fa-chevron-up active"></i>
+            <p class="active">You can reach us at #64, Ashwani Enclave, Lane No 2, Sewla Kalan, Majra, Dehradun, 248001, Uttarakhand.
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.faq-item').forEach(item => {
+            item.addEventListener('click', () => {
+                const isActive = item.querySelector('h2').classList.contains('active');
+                document.querySelectorAll('.faq-item h2').forEach(h2 => h2.classList.remove('active'));
+                document.querySelectorAll('.faq-item p').forEach(p => p.classList.remove('active'));
+                document.querySelectorAll('.faq-item i').forEach(i => i.classList.remove('active'));
+
+                if (!isActive) {
+                    item.querySelector('h2').classList.add('active');
+                    item.querySelector('p').classList.add('active');
+                    item.querySelector('i').classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
+
+<!--end-->
+<html>
+
+</html>
+
+<head>
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+</head>
+
+<body>
+    <div class="" id="fifth_section"></div>
+    <div class="container4">
+        <h1>Get in Touch</h1>
+        <p>Contact us for more information about our services and how we can help you.</p>
+       
+    </div>
+    <div class="contact-info">
+       
+        <div class="info-box">
+            <i class="fas fa-envelope"></i>
+            <h3>Email Us</h3>
+            <p>For any inquiries or support, feel free to reach out to us via email. We are here to assist
+                you!<br>Contact: <a href="mailto:smilesujokfoundation46@gmail.com">smilesujokfoundation46@gmail.com</a>
+            </p>
+        </div>
+        <div class="info-box">
+            <i class="fas fa-phone"></i>
+            <h3>Call Us</h3>
+            <p>Our dedicated team is available to answer your calls and provide assistance. Don't hesitate to reach
+                out!<br>Phone: <a href="tel:+919412939707">+91 94129 39707</a> or <a href="tel:+919760321477">+91 97603
+                    21477</a></p>
+        </div>
+        <div class="info-box">
+            <i class="fas fa-map-marker-alt"></i>
+            <h3>Visit Us</h3>
+            <p>We welcome you to visit our foundation and learn more about our services. Find us at:<br><a href="#">Our
+                    Location</a></p>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <div class="info-box">
+            <i class="fas fa-envelope"></i>
+            <h3>Visit Us</h3>
+            <p>We are located at #64, Ashwani Enclave, Lane No 2, Sewla Kalan, Majra, Dehradun, 248001,
+                Uttarakhand.<br>For more details, feel free to reach out via .</p>
+        </div>
+        <div class="info-box">
+            <i class="fas fa-phone"></i>
+            <h3>Call Us</h3>
+            <p>For inquiries, please contact us .<br>We are here to assist you with any questions you may
+                have.<a href="tel:09760321477">phone</a></p>
+        </div>
+        <div class="info-box">
+            <i class="fas fa-map-marker-alt"></i>
+            <h3>Find Us on the Map</h3>
+            <p>You can find our location easily on the map.<br>Check it out <a href="#">here</a>.</p>
+        </div>
+    </div>
+</body>
+
+</html>
