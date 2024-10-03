@@ -1,0 +1,835 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+    
+
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: transparent;
+    position: absolute;
+  top: 0;
+  left: 0;
+  width: 95%;
+  z-index: 1000;
+  background-color: transparent;
+  padding: 10px;
+
+   
+    
+    
+}
+.slide-image {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .slide-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+.navbar .logo {
+    font-size: 24px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.navbar .nav-links {
+    display: flex;
+    gap: 30px;
+    text-align: right;
+    justify-content: right;
+    padding-left: 300px;
+
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-family: Gabriela Stencil;
+}
+.navbar .nav-links .aa:hover {
+   
+    color: #fafafa;
+}
+.navbar .nav-links .aa {
+   
+    color: rgb(13, 13, 13);
+    font-family: Gabriela Stencil;
+
+}
+
+.navbar .nav-buttons {
+    display: flex;
+    gap: 10px;
+
+}
+
+.navbar .nav-buttons a {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+
+}
+
+.navbar .nav-buttons .get-involved {
+    border: 1px solid #f2f4f5;
+    color: #fefefe;
+    font-family: Gabriela Stencil;
+}
+
+.navbar .nav-buttons .get-involved:hover {
+    
+    color: #00000054;
+}
+
+
+.navbar .nav-buttons .donate-now {
+    background-color: #090a0af6;
+    color: white;
+    font-family: Gabriela Stencil;
+
+}
+
+.navbar .nav-buttons .donate-now:hover {
+    background-color: #ccc;
+    color: #666;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+    height: 100vh;
+    font-family: 'Baskerville', Garamond, sans-serif;
+
+}
+
+.hero .slides {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.hero .slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.hero .slide.active {
+    opacity: 1;
+}
+
+.hero .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.hero .hero-text h1 {
+    font-size: 48px;
+    margin: 0;
+    position: relative;
+}
+
+.hero .hero-text h1::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 100%;
+    height: 5px;
+    background: url('https://placehold.co/200x5/000000/000000.png?text=rough+line') repeat-x;
+    animation: draw-line 2s ease-in-out forwards;
+    opacity: 0;
+}
+
+.hero .hero-text p {
+    font-size: 18px;
+    margin: 20px 0;
+    color: #ddd;
+}
+
+.hero .hero-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+
+}
+
+.hero .hero-buttons a {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    font-size: 16px;
+}
+.hero .hero-buttons .learn {
+    background-color: #fbfbfb;
+    color: rgb(11, 11, 11);
+    font-family: Gabriela Stencil;
+
+}
+
+.hero .hero-buttons .learn:hover {
+    background-color: #a4f0d8;
+    color: #666;
+}
+.hero .hero-buttons .our {
+    background-color: #fcfcfc;
+    color: rgb(13, 13, 13);
+    font-family: Gabriela Stencil;
+
+}
+
+.hero .hero-buttons .our:hover {
+    background-color: #a4f0d8;
+    color: #666;
+}
+@keyframes draw-line {
+    0% {
+        width: 0;
+        opacity: 1;
+    }
+
+    100% {
+        width: 100%;
+        opacity: 1;
+    }
+}
+
+ /* Initial navigation bar styles */
+ .nav-scroll ul li {
+    display: inline-block;
+    margin-right: 70px;
+
+    /* add margin to the right of each element */
+}
+
+.nav-scroll ul li a {
+    color: #fff;
+    /* Change this to your desired color */
+    text-decoration: none;
+
+}
+.nav-scroll ul li .aa:hover {
+   
+    color: #fdfdfd;
+}
+
+
+.nav-scroll ul li:last-child {
+    margin-right: 0;
+
+    /* remove margin from the last element */
+}
+
+
+/* Secondary navigation bar styles */
+.nav-scroll {
+    position: fixed;
+    top: -200px;
+    /* Hide the navigation bar initially */
+    left: 0;
+    width: 100%;
+    height: 90px;
+    background-color: #000000a2;
+    color: #fff;
+    transition: top 0.3s;
+
+
+}
+
+/* Show the secondary navigation bar on scroll */
+.show-nav-scroll {
+    top: 0;
+
+}
+
+/* Hide the initial navigation bar on scroll */
+.hide-nav-initial {
+    top: -100px;
+
+}
+
+body {
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9f9;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    max-width: 1200px;
+    
+    margin: auto;
+}
+
+.content {
+     width: 100vw;
+
+}
+
+.container p {
+    font-size: 50px;
+    padding-left: 900;
+    padding-right: 900px;
+    color: #070707;
+    font-family: 'Baskerville', Garamond, sans-serif;
+}
+
+.content h1 {
+    color: #0c0c0c;
+    font-size: 66px;
+    margin-bottom: 20px;
+    font-family: 'Baskerville', Garamond, sans-serif;
+    max-width: 100%;
+    
+}
+
+.content {
+    font-size: 28px;
+    padding-right: 30px;
+
+    margin-bottom: 40px;
+    font-family: 'Baskerville', Garamond, sans-serif;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.stat-group {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+
+}
+
+.stat {
+
+    margin: 20px;
+    text-align: center;
+}
+
+.stat h2 {
+    font-size: 96px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.stat p {
+    font-size: 28px;
+    color: #666;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #445753;
+}
+
+.container1 {
+    width: 99%;
+    margin: 0;
+    padding: 20px;
+    background-color: #3b4f47;
+   }
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+    
+
+}
+
+.header h1 {
+    font-size: 46px;
+    color: #070707;
+    font-family: 'Baskerville', Garamond, sans-serif;
+
+
+
+}
+.container99 {
+    text-align: center;
+    font-size: 56px;
+    margin-bottom: 40px;
+    color: #ffffff;
+    font-family: Garamond, sans-serif;
+    margin-left: 295px;
+
+}
+.description {
+    text-align: center;
+    font-size: 56px;
+    margin-bottom: 40px;
+    color: #ffffff;
+    font-family: Garamond, sans-serif;
+
+}
+
+.description p {
+    color: #ffffff;
+    font-size: 21px;
+    text-align: center;
+    margin-bottom: 40px;
+    max-width: 800;
+
+}
+
+.events {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Baskerville', Garamond, sans-serif;
+}
+
+.event {
+    background-color: #b4c7c0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.event:hover {
+    transform: translateY(-10px);
+}
+
+.event img {
+    width: 100%;
+    border-radius: 8px 2px 0 0;
+}
+
+.event h3 {
+    font-size: 24px;
+    color: #333;
+    margin: 20px 0 10px;
+    transition: color 0.3s ease;
+}
+
+.event p {
+    color: #666;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+}
+
+.event button {
+    background-color: #fff;
+    border: 2px solid #101010;
+    color: #000000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.event button:hover {
+    background-color: #3b4f47;
+    color: #fff;
+}
+
+.event:hover h3,
+.event:hover p {
+    color: #3b4f47;
+}
+
+.therapy-section {
+    background-color: #6f918c;
+    color: #fff;
+    padding: 0px;
+    font-family: 'Baskerville', Garamond, sans-serif;
+
+}
+
+.therapy-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 10;
+}
+
+.therapy-section .header {
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 30px;
+    overflow: hidden;
+    color: #fff;
+
+}
+
+.therapy-section .header h1 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #060606;
+}
+
+.therapy-section .header p {
+    font-size: 18px;
+    padding-top: 1em;
+    font-weight: 400;
+    max-width: 800px;
+    margin: 0 auto;
+    animation: slideIn 5s ease-out;
+    color: #fcfcfc9a;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.therapy-section .services {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    font-family: 'Baskerville', Garamond, sans-serif;
+}
+
+.therapy-section .service {
+    background-color: #b4c7c0;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    flex: 1;
+    transition: transform 0.3s ease;
+}
+
+.therapy-section .service img {
+    width: 100%;
+    height: auto;
+}
+
+.therapy-section .service h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 20px 0 10px;
+}
+
+.therapy-section .service p {
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0 20px;
+    margin-bottom: 20px;
+    color: #000;
+
+}
+
+.therapy-section .service button {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.therapy-section .service button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
+    margin: 0;
+    padding: 0;
+}
+
+.container3 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+
+    font-size: 36px;
+    margin-bottom: 10px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    font-family: 'Baskerville', Garamond, sans-serif;
+}
+
+p.subtitle {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+    text-align: center;
+    padding-left: 0px;
+    transition: all 0.3s ease-in-out;
+    font-family: Garamond, sans-serif;
+
+}
+
+.testimonial {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: 'Baskerville', Garamond, sans-serif;
+}
+
+.testimonial-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: left;
+    transition: all 0.3s ease-in-out;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial-card .stars {
+    color: #f39c12;
+    margin-bottom: 10px;
+}
+
+.testimonial-card p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.testimonial-card .author {
+    display: flex;
+    align-items: center;
+}
+
+.testimonial-card .author img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.testimonial-card .author .name {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.testimonial-card .author .role {
+    font-size: 14px;
+    color: #777;
+}
+
+
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    font-family: 'Baskerville', Garamond, sans-serif;
+}
+
+p n {
+    font-size: 16px;
+    color: #666;
+    font-family: 'Baskerville', Garamond, sans-serif;
+}
+
+.faq-section {
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: 'Baskerville', Garamond, sans-serif;
+}
+
+.faq-item {
+    border-top: 1px solid #000;
+    padding: 15px 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-item:last-child {
+    border-bottom: 1px solid #000;
+}
+
+.faq-item h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.faq-item h2.active {
+    color: #007bff;
+}
+
+.faq-item p {
+    margin: 10px 0 0 0;
+    display: none;
+}
+
+.faq-item p.active {
+    display: block;
+}
+
+.faq-item i {
+    color: green;
+}
+
+.faq-item i.active {
+    transform: rotate(180deg);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container4 {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.container h1 po {
+    font-size: 66px;
+    font-weight: bold;
+    font-family: 'Baskerville', Garamond, sans-serif;
+    padding-left: 500;
+}
+
+
+.container .btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'Baskerville', Garamond, sans-serif;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f8f9fa;
+    padding: 50px 20px;
+    font-family: 'Baskerville', Garamond, sans-serif;
+}
+
+.contact-info .info-box {
+    text-align: center;
+    max-width: 300px;
+    font-family: 'Baskerville', Garamond, sans-serif;
+}
+
+.contact-info .info-box i {
+    font-size: 40px;
+    color: #28a745;
+    font-family: 'Baskerville', Garamond, sans-serif;
+}
+
+.contact-info .info-box h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0 10px;
+    font-family: 'Baskerville', Garamond, sans-serif;
+}
+
+.contact-info .info-box p {
+    font-size: 16px;
+    color: #666;
+    font-family: 'Baskerville', Garamond, sans-serif;
+}
+
+.contact-info .info-box a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.footer {
+    background-color: #000;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+    font-family: 'Baskerville', Garamond, sans-serif;
+}
+
+.footer .info-box {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.footer .info-box i {
+    font-size: 40px;
+    color: #28a745;
+}
+
+.footer .info-box h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0 10px;
+
+    font-family: 'Baskerville', Garamond, sans-serif;
+}
+
+.footer .info-box p {
+    font-size: 16px;
+}
+
+.footer .info-box a {
+    color: #007bff;
+    text-decoration: none;
+}
